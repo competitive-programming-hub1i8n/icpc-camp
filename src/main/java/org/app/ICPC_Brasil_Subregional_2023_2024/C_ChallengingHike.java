@@ -33,7 +33,7 @@ public class C_ChallengingHike {
             adj.get(u).add(v);
             adj.get(v).add(u);
         }
-
+        System.out.println(adj);
         List<Node> dfsResult = dfs(adj, n, likes);
         dfsResult.removeFirst();
         int[] ans = new int[n - 1];
